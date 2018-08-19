@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8">
+      <title>Exercício 3</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+</head>
+
+<script>
+      $(document).ready(function(){
+          $("#bt1").click(function(){
+              $("div").css({"background-color":"blue"});
+          });
+
+          $("#bt2").dblclick(function(){
+              $("#d2").css({"background-color":"green"});
+          });
+
+          $(".container").blur(function(){
+              $("#d3").css({"background-color":"black","color":"white"});
+          });
+
+      });
+</script>
+
+<body>
+<center>
+
+  <div class="container">
+      texto 1
+  </div>
+
+  <br>
+
+  <div id="d2" class="container">
+      texto 2
+  </div>
+
+  <br>
+
+  <div id="d3" class="container">
+      texto 3
+  </div>
+
+  <br>
+
+  <input id="texto" type="text">
+
+  <br>
+  <br>
+
+  <button id="bt1" class="btn">Primeiro Botão</button>&nbsp;&nbsp;
+  <button id="bt2" class="btn">Segundo Botão</button>
+
+</center>
+
+</body>
+
+</html>
